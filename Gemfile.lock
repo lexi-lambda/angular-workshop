@@ -43,6 +43,10 @@ GEM
     airbrake (4.3.0)
       builder
       multi_json
+    angular-rails-templates (0.2.0)
+      railties (>= 3.1)
+      sprockets (~> 2)
+      tilt
     arel (6.0.0)
     ast (2.0.0)
     astrolabe (1.3.0)
@@ -103,6 +107,7 @@ GEM
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     highline (1.7.2)
+    hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
     i18n-tasks (0.8.5)
@@ -163,11 +168,15 @@ GEM
     rails-assets-angular (1.4.1)
     rails-assets-angular-animate (1.4.1)
       rails-assets-angular (= 1.4.1)
+    rails-assets-angular-ui-bootstrap-bower (0.13.0)
+      rails-assets-angular (>= 1.3.0)
     rails-assets-angular-ui-router (0.2.15)
       rails-assets-angular (>= 1.0.8)
     rails-assets-angular-ui-router.stateHelper (1.3.0)
       rails-assets-angular (>= 1.2.0)
       rails-assets-angular-ui-router (~> 0.2.11)
+    rails-assets-bootstrap (3.3.5)
+      rails-assets-jquery (>= 1.9.1)
     rails-assets-jquery (2.1.4)
     rails-assets-jquery-ujs (1.0.4)
       rails-assets-jquery (> 1.8)
@@ -245,8 +254,11 @@ GEM
     spring (1.3.6)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
-    sprockets (3.2.0)
+    sprockets (2.12.4)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
       rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
     sprockets-rails (2.3.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -286,6 +298,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.8.0)
   airbrake (~> 4.3.0)
+  angular-rails-templates (~> 0.2.0)
   autoprefixer-rails (~> 5.2.1)
   better_errors (~> 2.1.1)
   bundler-audit (~> 0.4.0)
@@ -306,8 +319,10 @@ DEPENDENCIES
   rails (= 4.2.1)
   rails-assets-angular (~> 1.4.1)!
   rails-assets-angular-animate (~> 1.4.1)!
+  rails-assets-angular-ui-bootstrap-bower (~> 0.13.0)!
   rails-assets-angular-ui-router (~> 0.2.15)!
   rails-assets-angular-ui-router.stateHelper (~> 1.3.0)!
+  rails-assets-bootstrap (~> 3.3.5)!
   rails-assets-jquery (~> 2.1.4)!
   rails-assets-jquery-ujs (~> 1.0.4)!
   rails-assets-lodash (~> 3.9.3)!
