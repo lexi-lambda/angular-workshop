@@ -25,6 +25,7 @@ gem 'unicorn', '~> 4.9.0'
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular', '~> 1.4.1'
   gem 'rails-assets-angular-animate', '~> 1.4.1'
+  gem 'rails-assets-angular-resource', '~> 1.4.2'
   gem 'rails-assets-angular-ui-bootstrap-bower', '~> 0.13.0'
   gem 'rails-assets-angular-ui-router', '~> 0.2.15'
   gem 'rails-assets-angular-ui-router.stateHelper', '~> 1.3.0'

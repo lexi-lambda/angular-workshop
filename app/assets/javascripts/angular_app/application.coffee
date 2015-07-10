@@ -3,6 +3,7 @@
 #= require angular
 #= require angular-animate
 #= require angular-rails-templates
+#= require angular-resource
 #= require angular-ui-bootstrap-bower
 #= require angular-ui-router
 #= require angular-ui-router.stateHelper
