@@ -52,4 +52,31 @@ app.config [
             templateUrl: 'views/basics/repetition.html'
           }
         ]
+      .state
+        name: 'framework'
+        url: '/framework'
+        templateUrl: 'views/framework.html'
+        children: [
+          {
+            name: 'dependency-injection'
+            url: '/dependency-injection'
+            templateUrl: 'views/framework/dependency-injection.html'
+          }
+          {
+            name: 'services'
+            url: '/services'
+            templateUrl: 'views/framework/services.html'
+          }
+          {
+            name: 'directives'
+            url: '/directives'
+            templateUrl: 'views/framework/directives.html'
+          }
+          {
+            name: 'routing'
+            url: '/routing'
+            templateUrl: 'views/framework/routing.html'
+            children: []
+          }
+        ]
   ]

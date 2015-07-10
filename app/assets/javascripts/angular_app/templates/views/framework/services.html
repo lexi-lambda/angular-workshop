@@ -1,0 +1,10 @@
+<h2>Services</h2>
+
+<div ng-controller="RepetitionController">
+  <h3>LA Devs</h3>
+  <ul>
+    <li ng-repeat="person in people | orderBy:'first_name'">
+      {{person.first_name}} {{person.last_name}}
+    </li>
+  </ul>
+</div>
